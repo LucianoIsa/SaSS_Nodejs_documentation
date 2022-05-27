@@ -1,0 +1,105 @@
+// Variables
+@import'variables/colors' ;
+@import'variables/fonts';
+
+
+// Secciones
+@import'sections/navbar';
+
+@import'mixins/animations';
+
+html{
+    font-family: 15px;
+}
+#logosnav{
+    display: flex;
+    justify-content:space-around ;
+    align-items:initial;
+    height: 190px;
+//    border-radius: 10px;
+}
+body {
+    font-family:$primary-font;
+    text-align: justify;
+}
+.mensajesTitle{
+    @include transitionConfig(0.2s);
+    @include lighthover($green-color)  ;
+}
+.aboutMyTitle{
+    @include transitionConfig(0.2s)  ;
+    @include lighthover($yellow-color)  ;
+}
+.comandosTitle{
+    @include transitionConfig(0.2s)  ;
+    @include lighthover($red-color)  ;
+}
+h1 {
+    color: $primary-color; 
+    font-family: $secondary-font;
+}
+h2{
+    color:$secondary-color;
+    margin: 1rem 0rem 1.5rem 2rem;
+    border-color: $secondary-color;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+main{
+    a{
+        text-decoration: none;
+        color: $tertiary-color;
+        &:hover{
+            font-weight: bold;
+        }
+        &:visited{
+            color:$secondary-color;
+        }
+
+    }
+}
+.definition{
+    border:10px $secondary-color solid;
+    padding: 12px;
+    margin: 10px auto;
+    width: 60vw;
+}
+ol{
+    li{
+        border-bottom: 3px dashed $secondary-color;
+        padding: 10px;
+    }
+}
+form#consulta{
+    margin-left: 20px;
+    background-color: $tertiary-color ;
+    width: 70%;
+    input{
+        width: 30%;
+        height: 30px;
+        margin: 10px;
+    }
+    textarea {
+        width: 30vw;
+        height: 5vh;
+        margin: 10px;
+    }
+    button {
+        width: 20%;
+        margin: 10px;
+    }
+}
+.footer{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.3%;
+}
+
+// MediaQuery
+@import 'mediaqueries/mobile';
+@import 'mediaqueries/tablet'

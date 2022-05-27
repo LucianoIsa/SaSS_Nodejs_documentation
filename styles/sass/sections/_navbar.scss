@@ -1,0 +1,21 @@
+nav{
+    //background-color: $primary-color;
+    color:$white;
+
+    ul{
+    list-style: none;
+    display: flex;
+    background-color: $primary-color;
+    }
+    li{
+        margin:10px;
+        &:hover {
+            background-color: #998999;
+        }
+    }
+    a{
+        text-decoration: none;
+        color:$white;
+        font-weight: bold;
+    }
+}

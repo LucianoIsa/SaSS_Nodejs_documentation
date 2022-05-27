@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass - Node.Js</title>
+    <link rel="stylesheet" href="styles/css/index.css">
+</head>
+<body>
+    <nav>
+        <div id="logosnav">
+            <img src="styles/img/logoSass2.png" class="logo" alt="Logo Sass" loading="lazy" >
+            <h1>Estilos SaSS - Node.js</h1>
+            <img src="styles/img/logoNode3.png" class="logo"  alt="Logo nodejs" loading="lazy">
+        </div>
+        <ul>
+            <li>
+                <a href="#definicion">Definición</a>
+            </li>
+            <li>
+                <a href="#comandos"class="comandosTitle" >Comandos</a>
+            </li>
+            <li>
+                <a href="#mensajes" class="mensajesTitle">Mensajes</a>
+            </li>
+            <li>
+                <a href="#aboutMy" class="aboutMyTitle">About My</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="definicion">
+            <h2>
+                Definición
+            </h2>
+            <a href="https://sass-lang.com/">Documentación Sass</a>
+            <a href="https://nodejs.org/">Doc Node</a>
+            <p class="definition"><strong>Sass (Syntactically Awesome Stylesheets) es un lenguaje de hoja de estilos en cascada.Sass es un metalenguaje de Hojas de Estilo en Cascada (CSS). Es un lenguaje de script que es traducido a CSS,</strong> SassScript es el lenguaje de script en sí mismo. Sass consiste en dos sintaxis. La sintaxis original, llamada indented syntax («sintaxis con sangrado») que usa una sintaxis similar al Haml. Este usa la sangría para separar bloques de código y el carácter nueva línea para separar reglas. La sintaxis más reciente, SCSS, usa el formato de bloques como CSS. Este usa llaves para denotar bloques de código y punto y coma (;) para separar las líneas dentro de un bloque. La sintaxis indentada y los ficheros SCSS tienen las extensiones .sass y .scss respectivamente.SassScript proporciona los mecanismos siguientes: variables, nesting (anidamiento), mixins, y herencia. de los selectores.</p>
+            <p class="definition"><strong>Node.js es un entorno en tiempo de ejecución multiplataforma</strong>, de código abierto,basado en el lenguaje de programación JavaScript.Al contrario que la mayoría del código JavaScript,<strong> no se ejecuta en un navegador, sino en el servidor</strong>. Ideado como un entorno de ejecución de JavaScript orientado a eventos asíncronos, Node. js está diseñado para crear aplicaciones network escalables.Es una Máquina Virtual tremendamente rápida y de gran calidad escrita por gente como Lars Bak, uno de los mejores ingenieros del mundo especializados en VMs(Virtual Machines).Existe una comunidad muy activa de desarrolladores de Node.js que se comunican a través de grupos de discusión.</p>
+        </section>
+        <section id="comandos">  
+            <h2 class="comandosTitle">Comandos</h2>
+            <ol>
+                <li>
+                    <h3>Iniciando un Proyecto de node.js</h3>
+                    <code>node init --yes</code>
+                </li>
+                <li>
+                    <h3>Instalar SaSS de forma global:</h3>
+                    <code>npm install -g sass</code>
+                </li>
+                <li>
+                    <h3>Agrego los scripts para compilar SaSS en mi package.json</h3>
+                    <code>
+                        "scripts": {
+                        "sass-watch-dev":"sass --watch -c --style=expanded --no-source-map styles/sass:styles/css",
+                        "sass-compile-dev":"sass -c --style=expanded --no-source-map styles/sass:styles/css",
+                        "sass-compile-prod":"sass -c --style=compressed --no-source-map styles/sass:styles/css"
+                        }
+                    </code>
+                </li>
+                </li>
+            </ol>
+        </section>
+        <section id="aboutMy">
+            <h2 class="aboutMyTitle">About My</h2>
+            <a href="https://www.linkedin.com/in/luciano-isa/">LinkedIn</a>
+            <a href="https://github.com/LucianoIsa">GitHub</a>
+            <div class="definition">
+            <p>Soy Argentino, <strong>Técnico en Computación</strong>,recibido de la Escuela Técnica. Me encuentro realizando la carrera de <strong>FullStack Developer</strong>en la Universidad Nacional de Córdoba(con mundosE) y tambien un <strong>Bootcamp de ORACLE programa ONE LATAM</strong>.</p>
+            <p>Tambien estoy haciendo la <strong> Aceleración de Alkemy,en Java SpringBoot (Backend)</strong>,diseñando una API para una ONG, aplicando trabajo en equipo y tecnicas de Scrum , utilizando Jira y simulando un entorno real de trabajo. Para acceder a esta Aceleración, tuve que aprobar un Challenge de ingreso, en el que realicé una API de las Péliculas de Disney</p>
+            <p>Al mismo tiempo desarrollo un curso de desarrollador FullStack de Potrero Digital,en el que tambien se dictan Habilidades Blandas e Ingles Técnico, auspiciado por Mercado Libre y Digital House.</p>
+            <p>Soy autodidacta, realice cursos en Udemy, Platzy ,Coursera, EducaciónIT y tambien un Bootcamp de Python & RPA.</p>
+            <p>En lo nó esta relacionado con el mundo IT, fuí alumno avanzado de Ingenieria Química ,hasta hace muy poco tiempo.</p>
+            <dl>
+                <dt>Datos de Contacto:</dt>
+                <li>lucianoisabb@hotmail.com</li>
+                <li>+54 9 291 4759116</li>
+                <li>LinkedIn</li>
+                <li>GitHub</li>
+            </dl>
+            </div>
+        </section>
+        <section id="mensajes">
+            <h2 class="mensajesTitle">Envianos tu Comentario</h2>
+            <form id="consulta">
+                <div>
+                    <input type="text" placeholder="Ingresa tu Nombre">
+                </div>
+                <div>
+                    <textarea placeholder="Deja tu Consulta">
+                    </textarea>
+                </div>
+                <div>
+                    <button>
+                        Send
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">&#169 Luciano Isa - lucianoisabb@hotmail.com</footer>
+    </body>
+</html>
